@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family= Kdam+Thmor+Pro & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdan thmor pro', sans-serif;
+}
+
+li:hover {
+    color: #21617;
+}
+
+#logo {
+    width: 150px;
+
+}
+
+#banner {
+    background-image: url('https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'kdan thmor pro', sans-serif;'kdan thmor pro', sans-serif;
+    width: 70%:
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: colum;
+    justify-content: flex-end;
+    padding: 0 0 20px 10pxs;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdan thmor pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqwgUSbqzGbCZ3u3iouk4jLWPk41RlSpo_g&usqp=CAU);
+}
+
+.banner-2 {
+    background-image: url('https://pbs.twimg.com/media/FMOk4EiXEAURgip.jpg');
+}
+
+.banner-3 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW1oglzer3rNBrHTOm0sFW0UVMg3PTTRlDBnXn5IaYV8sQMgHhxLoGjvI00hN6crgs9L8&usqp=CAU);
+}
+
+footer {
+    height: 300px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'kdan thmor pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    #banner {
+        background-position: 70%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 60%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+}
+
+#logo-contato {
+    width: 200px;
+    height: auto;
+}
+
+.correspondencia {
+    width: 100%;
+    padding: 30px 0px 20px 10px;
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#c1 {
+    color: red;
+    font-size: 25px;
+}
+
+#c2 {
+    color: #fff;
+    font-size: 15px;
+}
+
+.marketing {
+    width: 100%;
+    padding: 30px 0px 20px 10px;
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imprensa {
+    width: 100%;
+    padding: 30px 0px 20px 10px;
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.coment {
+    width: 100%;
+    padding: 30px 0px 20px 10px;
+    color: red;
+    font-family: 'kdan thmor pro', sans-serif;
+    font-size: 25px;
+    justify-content: center;
+}
+
+#texto {
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.botao {
+    background-color: #fff;
+    color: #000;
+}
+
+#mensagem {
+    color: #fff;
+}
